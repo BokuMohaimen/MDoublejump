@@ -1,0 +1,4 @@
+name: MDoubleJump
+version: @version@
+main: doublejump.mdoublejump.MDoubleJump
+authors: [Mohaimen_Ksr]
