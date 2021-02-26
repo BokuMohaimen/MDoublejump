@@ -37,8 +37,8 @@ public final class MDoubleJump extends JavaPlugin implements Listener {
         if (p.getGameMode() != GameMode.CREATIVE) {
             e.setCancelled(true);
             Block b = p.getWorld().getBlockAt(p.getLocation().subtract(0, 2, 0));
-            p.playSound(p.getLocation(), Sound.ENTITY_BAT_TAKEOFF, 10, 1);
             if (!b.getType().equals(Material.AIR)) {
+                p.playSound(p.getLocation(), Sound.ENTITY_BAT_TAKEOFF, 10, 1);
                 Vector v = p.getLocation().getDirection().multiply(1).setY(1);
                 p.setVelocity(v);
             }
